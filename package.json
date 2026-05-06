@@ -13,11 +13,14 @@
     "@types/node": "^25.6.0",
     "prettier": "3.8.3",
     "prettier-plugin-ejs": "^1.0.3",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch --env-file-if-exists=.env app.ts",
+    "build": "npm install && tsc && cp -r src/views dist/",
+    "start": "node dist/app.js",
+    "dev": "tsx --watch --env-file-if-exists=.env src/app.ts",
     "prettier:ejs": "prettier --plugin=prettier-plugin-ejs --write **/*.ejs"
   },
   "keywords": [],
