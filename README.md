@@ -9,3 +9,5 @@
   - @types/ejs
 - prettier
   - prettier-plugin-ejs
+- tsx
+- express-validator

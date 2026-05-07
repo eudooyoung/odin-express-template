@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "ejs": "^5.0.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2"
   },
   "name": "odin-express-template",
   "version": "1.0.0",
@@ -21,7 +22,7 @@
     "build": "npm install && tsc && cp -r src/views dist/",
     "start": "node dist/app.js",
     "dev": "tsx --watch --env-file-if-exists=.env src/app.ts",
-    "prettier:ejs": "prettier --plugin=prettier-plugin-ejs --write **/*.ejs"
+    "prettier:e": "prettier --plugin=prettier-plugin-ejs --write **/*.ejs"
   },
   "keywords": [],
   "author": "",
