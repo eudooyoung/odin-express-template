@@ -3,6 +3,7 @@
     "ejs": "^5.0.2",
     "express": "^5.2.1",
     "express-validator": "^7.3.2",
+    "js-convert-case": "^4.2.0",
     "pg": "^8.20.0"
   },
   "name": "odin-express-template",
@@ -14,17 +15,15 @@
     "@types/express": "^5.0.6",
     "@types/node": "^25.6.0",
     "@types/pg": "^8.20.0",
-    "prettier": "3.8.3",
-    "prettier-plugin-ejs": "^1.0.3",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && tsc && cp -r src/views dist/",
+    "build": "rm -rf dist/ && npm install && tsc && cp -r src/views dist/ && cp -r src/public dist/",
     "start": "node dist/app.js",
-    "dev": "tsx --watch --env=.env src/app.ts",
-    "prettier:e": "prettier --plugin=prettier-plugin-ejs --write **/*.ejs"
+    "populate": "tsx --env-file=.env src/db/populate.ts",
+    "dev": "tsx --watch --env=.env src/app.ts"
   },
   "keywords": [],
   "author": "",
