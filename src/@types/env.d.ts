@@ -5,6 +5,7 @@ declare global {
       JWT_SECRET: string;
       DATABASE_URL: string;
       APP_DEBUG: string;
+      SESSION_SECRET: string;
     }
   }
 }
