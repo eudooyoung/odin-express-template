@@ -2,7 +2,7 @@
 
 ## About
 
-This template contains basic packages for express application.
+This template contains jwt-related packages, and cors.
 
 ## How to use it
 
@@ -15,12 +15,22 @@ After clone this repo, run `npm run install && npx prisma generate`.
 ├── @types/express
 ├── express-validator
 
+├── cors
+├── @types/cors
+
+├── jsonwebtoken
+├── @types/jsonwebtoken
+
 ├── eslint
 ├── @eslint/js
 ├── typescript-eslint
 
 ├── passport
 ├── @types/passport
+├── passport-local
+├── @types/passport-local
+├── passport-jwt
+├── @types/passport-jwt
 
 ├── prisma
 ├── @prisma/adapter-pg
@@ -36,5 +46,7 @@ After clone this repo, run `npm run install && npx prisma generate`.
 ├── @types/supertest
 ├── vitest
 
+├── bcryptjs
 └── dotenv
+
 ```

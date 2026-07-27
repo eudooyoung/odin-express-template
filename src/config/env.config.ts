@@ -12,4 +12,5 @@ export const env = {
   port: Number(process.env.PORT),
   dbURL: process.env.DATABASE_URL,
   debug: process.env.APP_DEBUT === "true",
+  jwtSecret: process.env.JWT_SECRET,
 };
